@@ -1,1 +1,5 @@
-This repo contains basic approximation methods for point clouds;
+This repo contains a special approximation methods for point clouds;
+Please run ba.m and my3d.m to see the approximation process;
+This method is base on local LS approximation, but not using LS directly;
+Because if we connect local area using constrains, it will result in a large Normal matrix and cause singularity;
+we use the basis function of plan surface to avoid large calculation when connecting neighboring area;
